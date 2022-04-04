@@ -156,7 +156,7 @@ spec:
               readOnly: true
             {{ end }}
             {{ end }}
-            {{- if eq .Values.storage "pvc" }}
+            {{- if eq .Values.storage "pvc1" }}
             - name: glance-images
               mountPath: {{ .Values.conf.glance.glance_store.filesystem_store_datadir }}
             {{ end }}
